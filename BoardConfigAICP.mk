@@ -14,6 +14,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+# Touch
+include hardware/google/pixel/touch/device.mk
+
 # Build necessary packages for vendor
 
 # Bluetooth
