@@ -14,6 +14,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
+
 # Touch
 include hardware/google/pixel/touch/device.mk
 
