@@ -31,10 +31,14 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_whitefin_pkvm.mk \
     $(LOCAL_DIR)/aosp_whitefin_hwasan.mk \
     $(LOCAL_DIR)/aosp_whitefin_64.mk \
-    $(LOCAL_DIR)/factory_whitefin.mk
+    $(LOCAL_DIR)/factory_whitefin.mk \
+    $(LOCAL_DIR)/aicp_oriole.mk \
+    $(LOCAL_DIR)/aicp_raven.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_slider-userdebug \
     aosp_whitefin-userdebug \
     aosp_oriole-userdebug \
-    aosp_raven-userdebug
+    aosp_raven-userdebug \
+	aicp_oriole-userdebug \
+	aicp_raven-userdebug
