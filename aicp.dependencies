@@ -1,0 +1,21 @@
+[
+  {
+    "repository": "device_google_gs101",
+    "target_path": "device/google/gs101"
+  },
+  {
+    "repository": "device/google/raviole-kernel",
+    "target_path": "device/google/raviole-kernel",
+    "remote": "aosp"
+  },
+  {
+    "repository": "kernel_google_raviole_raven",
+    "target_path": "kernel/google/raviole/raven",
+    "remote": "aosp"
+  },
+  {
+    "repository": "nivlafx/vendor_google_raven",
+    "target_path": "vendor/google/raven",
+    "remote": "gitlab"
+  }
+]
