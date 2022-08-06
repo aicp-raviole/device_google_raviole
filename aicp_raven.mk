@@ -10,6 +10,18 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
 
+#Build with Gapps
+#$(call inherit-product, vendor/gapps/config.mk)
+
+#Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#Broken Libraries
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+# Extra Google/Pixel features
+TARGET_SUPPORTS_QUICK_TAP := true
+
 include device/google/gs101/aicp_common.mk
 include device/google/raviole/device-aicp.mk
 
