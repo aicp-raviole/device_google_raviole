@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2021 The AICP Project
+# Copyright (C) 2021 The Arrow Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aicp
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -22,12 +22,6 @@ PRODUCT_PACKAGES += \
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
-
-# PowerShare
-include hardware/google/pixel/powershare/device.mk
-
-# Touch
-include hardware/google/pixel/touch/device.mk
 
 # Build necessary packages for vendor
 

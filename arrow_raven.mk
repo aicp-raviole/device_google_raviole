@@ -1,38 +1,37 @@
 #
-# Copyright (C) 2021 The AICP Project
+# Copyright (C) 2021 The Arrow Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
 
 #Build with Gapps
-#$(call inherit-product, vendor/gapps/config.mk)
+ARROW_GAPPS := true
 
 #Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
+#TARGET_FACE_UNLOCK_SUPPORTED := true
 
 #Broken Libraries
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Extra Google/Pixel features
-TARGET_SUPPORTS_QUICK_TAP := true
+#TARGET_SUPPORTS_QUICK_TAP := true
 
-include device/google/gs101/aicp_common.mk
-include device/google/raviole/device-aicp.mk
+include device/google/gs101/arrow_common.mk
+include device/google/raviole/device-arrow.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6 Pro
-PRODUCT_NAME := aicp_raven
+PRODUCT_NAME := arrow_raven
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Alvin F. (nivlafx)" \
