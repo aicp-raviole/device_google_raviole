@@ -5,21 +5,26 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
 $(call inherit-product, device/google/gs101/lineage_common.mk)
 $(call inherit-product, device/google/raviole/device-lineage.mk)
 
+#Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6 Pro
-PRODUCT_NAME := lineage_raven
+PRODUCT_NAME := dot_raven
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
+
+#PRODUCT_GMS_CLIENTID_BASE := android-raven
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=raven \

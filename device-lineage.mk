@@ -102,6 +102,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor:64 \
     android.hardware.keymaster@4.1.vendor:64 \
     android.hardware.neuralnetworks-V1-ndk_platform.vendor:64 \
+    android.hardware.neuralnetworks@1.3.vendor:64 \
     android.hardware.oemlock@1.0.vendor:64 \
     android.hardware.power@1.0.vendor:64 \
     android.hardware.power@1.1.vendor:64 \
