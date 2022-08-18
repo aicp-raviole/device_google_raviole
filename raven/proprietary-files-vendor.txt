@@ -245,6 +245,7 @@ vendor/etc/modem/teamfood_default.nprf
 vendor/etc/modem/teamfood_default_metrics.xml
 vendor/etc/modem_stat.conf
 vendor/etc/open_carrier_info.dat
+vendor/etc/permissions/android.hardware.fingerprint.xml
 vendor/etc/permissions/android.hardware.telephony.gsm.xml
 vendor/etc/permissions/android.hardware.telephony.ims.singlereg.xml
 vendor/etc/permissions/android.hardware.telephony.ims.xml
