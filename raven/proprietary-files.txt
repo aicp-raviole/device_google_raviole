@@ -16,10 +16,10 @@ product/etc/firmware/music_detector.sound_model_2
 product/app/PixelCameraServicesRaven/PixelCameraServicesRaven.apk;PRESIGNED
 
 # Charger
-product/etc/res/images/charger/battery_fail.png
-product/etc/res/images/charger/battery_scale.png
-product/etc/res/images/charger/main_font.png
-product/etc/res/values/charger/animation.txt
+system/etc/res/images/charger/battery_fail.png
+system/etc/res/images/charger/battery_scale.png
+vendor/etc/res/images/charger/main_font.png
+vendor/etc/res/values/charger/animation.txt
 
 # Felica
 product/etc/felica/common.cfg
@@ -209,10 +209,6 @@ product/priv-app/DiagMon/DiagMon.apk
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
 
-# US Cellular
-product/etc/permissions/com.android.sdm.plugins.usccdm.xml
-product/priv-app/USCCDM/USCCDM.apk
-
 # VZW
 product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 product/etc/permissions/com.android.omadm.service.xml
@@ -239,8 +235,8 @@ system_ext/framework/com.google.android.camera.extensions.jar
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
 system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc
 system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml
-system_ext/lib64/com.google.edgetpu_app_service-V1-ndk_platform.so
-system_ext/lib64/com.google.edgetpu_vendor_service-V1-ndk_platform.so
+system_ext/lib64/com.google.edgetpu_app_service-V2-ndk.so
+system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 
 # HBM
 system_ext/lib64/libhbmsvmanager_jni.so
@@ -278,8 +274,9 @@ system_ext/framework/RadioConfigLib.jar
 system_ext/framework/google-ril.jar
 system_ext/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
 system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk
-system_ext/priv-app/EuiccSupportPixel/DKA_RC5_DVT.up
-system_ext/priv-app/EuiccSupportPixel/DKA_RC5_EVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_RC5_DVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_RC6_DVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_RC6_EVT.up
 system_ext/priv-app/EuiccSupportPixel/esim-full-ofl-v1.img
 system_ext/priv-app/EuiccSupportPixel/esim-full-v1.img
 system_ext/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
@@ -300,8 +297,7 @@ system_ext/priv-app/OemRilService/OemRilService.apk
 
 # UWB
 system_ext/etc/permissions/privapp-permissions-qorvo.xml
-system_ext/framework/hardware.qorvo.uwb-V1-java.jar
-system_ext/priv-app/UwbService/UwbService.apk;PRESIGNED
+system_ext/priv-app/UwbVendorService/UwbVendorService.apk;PRESIGNED
 
 # VZW
 system_ext/etc/permissions/com.verizon.llkagent.xml
