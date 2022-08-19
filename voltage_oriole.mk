@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_oriole.mk)
@@ -15,11 +15,14 @@ $(call inherit-product, device/google/raviole/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6
-PRODUCT_NAME := dot_oriole
+PRODUCT_NAME := voltage_oriole
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
+
+#GAPPS
+WITH_GAPPS := true
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \

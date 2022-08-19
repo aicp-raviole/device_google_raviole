@@ -19,6 +19,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+#Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts

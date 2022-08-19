@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
@@ -14,17 +14,17 @@ $(call inherit-product, device/google/raviole/device-lineage.mk)
 
 #Gapps
 WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
+PRODUCT_GMS_CLIENTID_BASE := android-google
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6 Pro
-PRODUCT_NAME := dot_raven
+PRODUCT_NAME := voltage_raven
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1440
-
-#PRODUCT_GMS_CLIENTID_BASE := android-raven
+TARGET_BOOT_ANIMATION_RES := 2560
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=raven \
