@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
@@ -17,13 +17,24 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_NAME := arrow_raven
 
+PRODUCT_GMS_CLIENTID_BASE := android-google
+
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
+
+TARGET_SUPPORTS_QUICK_TAP := true
+
+#Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 #Build with Gapps
-ARROW_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_MINI_GAPPS := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=raven \
     TARGET_PRODUCT=raven \
     PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8877034 release-keys"
 
