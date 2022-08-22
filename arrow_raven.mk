@@ -29,4 +29,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys
 
-$(call inherit-product, vendor/google/raven/raven-vendor.mk)
+$(call inherit-product, vendor/google_devices/raven/proprietary/device-vendor.mk)
