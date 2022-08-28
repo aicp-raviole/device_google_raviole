@@ -15,7 +15,7 @@ TARGET_KERNEL_DTBO := google/dtbo.img
 TARGET_KERNEL_DTB := \
     google/gs101-a0.dtb \
     google/gs101-b0.dtb
-TARGET_KERNEL_SOURCE := kernel/google/raviole
+TARGET_KERNEL_SOURCE := kernel/google/raviole/private/gs-google
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/raviole/vendor_dlkm.modules.load))
@@ -36,7 +36,7 @@ TARGET_KERNEL_EXT_MODULES := \
     bluetooth/broadcom \
     bms \
     display/samsung \
-    edgetpu/drivers/edgetpu \
+    edgetpu/abrolhos/drivers/edgetpu \
     gpu/mali_kbase \
     gpu/mali_pixel \
     lwis \
@@ -45,7 +45,6 @@ TARGET_KERNEL_EXT_MODULES := \
     touch/common \
     touch/fts/ftm5 \
     touch/sec \
-    uwb/kernel \
     wlan/bcmdhd4389
 
 # Manifests
