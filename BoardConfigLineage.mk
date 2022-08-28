@@ -15,7 +15,7 @@ TARGET_KERNEL_DTBO := google/dtbo.img
 TARGET_KERNEL_DTB := \
     google/gs101-a0.dtb \
     google/gs101-b0.dtb
-TARGET_KERNEL_SOURCE := kernel/google/raviole/private/gs-google
+TARGET_KERNEL_SOURCE := kernel/google/raviole
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/raviole/vendor_dlkm.modules.load))

@@ -6,4 +6,4 @@
 
 include device/google/raviole/BoardConfigLineage.mk
 
-include vendor/google_devices/raven/proprietary/BoardConfigVendor.mk
+include vendor/google/raven/BoardConfigVendor.mk
