@@ -45,6 +45,7 @@ TARGET_KERNEL_EXT_MODULES := \
     touch/common \
     touch/fts/ftm5 \
     touch/sec \
+    uwb/kernel \
     wlan/bcmdhd4389
 
 # Manifests
